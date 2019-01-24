@@ -1,3 +1,9 @@
+// Desktops & Laptops
+@include mediaLg {
+}
+
+
+
 //Menu Bar
 .menu-btn {
   position: absolute;
@@ -81,13 +87,54 @@
     }
   }
 
-  //portrait {
-  // width:250px;
-  //height: 250px;
-  //background: url("../img/portrait.jpg");
-  //border-radius: 50%;
-  //border: solid 3px $secondary-color;
-  //}
+  // Tablets & Small Laptops
+//@incude mediaMd {
+  //main {
+   // align-items: center;
+  //  text-align: center;
+
+   // .lg-heading {
+  //    line-height: 1;
+  //    margin-bottom: 1rem;
+  //  }
+ // }
+
+ // ul.menu-nav,
+ // div.menu-branding {
+     // float: none;
+     // width: 100%;
+     // min-height: 0;
+
+     // &.show {
+      //    transform: translate3d(0,0,0);
+     // }
+ // }
+
+  .menu-nav {
+      height: 75vh;
+      transform: translation3d(-100%,0,0);
+      font-size: 24px
+  }
+
+  .menu-branding {
+      height: 25vh;
+      transform: translation3d(100%,0,0);
+
+      .portrait {
+          background: url
+          ();
+          width: 150px;
+          height: 150px;
+      }
+  }
+}
+
+  //Smartphones
+  @include mediaSm {
+    main#home h1 {
+      margin-top: 10vh;
+    }
+  }
 
   .nav-item {
     transform: translate3d(600px, 0, 0);
