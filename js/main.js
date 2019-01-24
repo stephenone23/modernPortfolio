@@ -43,3 +43,11 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+document.querySelectorAll(".skillname").forEach(item =>
+  item.addEventListener("click", function() {
+    document
+      .querySelectorAll(".skilldetail")
+      .forEach(item => item.classList.remove("show"));
+    this.firstElementChild.classList.toggle("show");
+  })
+);
